@@ -7,7 +7,7 @@
 </head>
 <body>
 
-<header>
+<header class="header">
   <!-- navbar groot -->
   <div class="navbar">
     <a href="/" class="homebutton">Home</a>
@@ -84,17 +84,15 @@ body {
 
 /* Navigation */
 .navbar {
-    background-color: #faf9f9;
+    background-color: #5ea3a3;
     padding: 10px;
 }
 
 /* Style for navigation links */
 .navbar a {
     padding: 10px 20px;
-    background-color: #5ea3a3;
+    background-color: #488b8f;
     color: white;
-    border: none;
-    text-decoration: none;
     cursor: pointer;
     display: inline-block;
 }
@@ -106,9 +104,8 @@ body {
 /* Header */
 .header {
     background-color: #5ea3a3;
-    color: white;
-    padding: 100px 0;
-    text-align: center;
+    padding: 35px 0;
+    text-align: left;
 }
 
 .header h1 {
