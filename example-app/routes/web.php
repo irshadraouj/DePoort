@@ -21,3 +21,7 @@ Route::get('/inloggen', function () {
 Route::get('/overons', function () {
     return view('overons');
         });
+
+Route::get('/accountaanmaken', function () {
+        return view('accountaanmaken');
+        });
