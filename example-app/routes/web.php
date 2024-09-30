@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
+<<<<<<< Updated upstream
         });
 
 Route::get('/afspraak', function () {
@@ -21,3 +22,9 @@ Route::get('/inloggen', function () {
 Route::get('/overons', function () {
     return view('overons');
         });
+=======
+});
+use App\Http\Controllers\FormController;
+
+Route::post('/submit', [FormController::class, 'store']);
+>>>>>>> Stashed changes
