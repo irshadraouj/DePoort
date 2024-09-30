@@ -40,6 +40,7 @@
             <tr>
                 <td><input type="text" placeholder="gebruikersnaam" id="gebruikersnaam" onkeyup="foutmelding('gebruikersnaam')">
                     <input type="text" placeholder="wachtwoord" id="wachtwoord" onkeyup="foutmelding('wachtwoord')">
+                    
                 </td>
 
             </tr>
@@ -48,12 +49,13 @@
             
             <tr>
 
-                <td><input type="submit" name="submit" value="Inloggen"></td>
+                <td><a href="/inloggen" class="inloggen">inloggen</a></td>
     
             </tr>
             <tr>
 
-                <td><input type="submit" name="submit" value="Account aanmaken"></td>
+                <td><a href="/accountaanmaken" class="accountaanmaken">account aanmaken</a></td>
+
     
             </tr>
 
