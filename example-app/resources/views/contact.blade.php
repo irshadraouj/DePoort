@@ -26,7 +26,7 @@
         <div class="container">
             <div class="grid-text">
                 <h2>Contact</h2>
-                <p>We offer the best services. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet.</p>
+                <p>...</p>
             </div>
             <div class="grid-icon">
             </div>
@@ -39,8 +39,8 @@
             <div class="grid-icon">
             </div>
             <div class="grid-text">
-                <h2>Our Services</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet.</p>
+                <h2>...</h2>
+                <p>...</p>
             </div>
         </div>
     </section>

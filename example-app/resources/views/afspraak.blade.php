@@ -17,9 +17,22 @@
     <a href="/overons" class="overonsbutton">Over ons</a>
   </div>
 </header>
+<!-- Main Content -->
+<main>
+    <!-- First Section -->
+    <section class="grid-section">
+        <div class="container">
+            <div class="grid-text">
+                <h2>Afspraak maken</h2>
+                <p>...</p>
+            </div>
+            <div class="grid-icon">
+            </div>
+        </div>
+    </section>
 
-<!-- Inlogpagina -->
-<form id="form" method="post">
+    <!-- afspraak maken -->
+    <form id="form" method="post">
         <table>
             <tr>
                 <td> naam: </td>
@@ -76,28 +89,14 @@
         </table>
     </form>
 
-<!-- Main Content -->
-<main>
-    <!-- First Section -->
-    <section class="grid-section">
-        <div class="container">
-            <div class="grid-text">
-                <h2>Afspraak maken</h2>
-                <p>We offer the best services. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet.</p>
-            </div>
-            <div class="grid-icon">
-            </div>
-        </div>
-    </section>
-
     <!-- Second Section -->
     <section class="grid-section light">
         <div class="container">
             <div class="grid-icon">
             </div>
             <div class="grid-text">
-                <h2>Our Services</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet.</p>
+                <h2>...</h2>
+                <p>...</p>
             </div>
         </div>
     </section>
@@ -207,4 +206,17 @@ body {
 .footer p {
     margin-bottom: 20px;
 }
+
+/* form */
+body { font-family: Arial, sans-serif; background-color: #f4f4f4; padding: 20px; }
+table { width: 100%; max-width: 600px; margin: 0 auto; background-color: white; padding: 20px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+td { padding: 10px; }
+input[type="text"], input[type="number"], input[type="submit"] { width: calc(100% - 20px); padding: 8px; margin-top: 5px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
+input[type="radio"] { margin-left: 10px; }
+input[type="submit"] { background-color: #4CAF50; color: white; cursor: pointer; }
+input[type="submit"]:hover { background-color: #45a049; }
+td:first-child { text-align: right; font-weight: bold; }
+#naam-error, #tsv-error, #achternaam-error, #adres-error, #postcode-error, #telefoon-error, #geslacht-error, #geboorte-error { color: red; font-size: 0.9em; padding-left: 10px; }
+@media (max-width: 768px) { table { width: 100%; } td:first-child { text-align: left; } input[type="text"], input[type="number"], input[type="submit"] { width: 100%; } }
+
 </style>
