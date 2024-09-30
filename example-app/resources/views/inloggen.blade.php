@@ -92,6 +92,24 @@
         </table>
     </form>
 
+    <script>
+
+        function foutmelding(id) {
+            //    document.getElementById("naam")
+
+            if (document.getElementById(id).value.length < 2) {
+                document.getElementById(id).style.backgroundColor = "red";
+                document.getElementById(id + '-error').innerHTML = id + " klopt niet,";
+            }
+            else {
+                document.getElementById(id).style.backgroundColor = "lightgreen";
+                document.getElementById(id + '-error').innerHTML = "";
+            }
+        }
+
+
+    </script>
+
 
 
     <!-- Second Section -->
