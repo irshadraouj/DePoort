@@ -2,7 +2,7 @@
 $dbhost = "localhost";
   $dbuser = "root";
   $dbpass = "";
-  $dbname = "ikea";
+  $dbname = "9weken";
 
   //connects to database
   $con = new mysqli($dbhost, $dbuser, $dbpass, $dbname);
@@ -10,5 +10,5 @@ $dbhost = "localhost";
   if ($con->connect_error) {
     die("Connection failed: " . $con->connect_error);
   }
-  //echo "Connected successfully";
+  echo "Connected successfully";
   ?>
