@@ -93,19 +93,6 @@
     </form>
 
 
-<!-- Main Content -->
-<main>
-    <!-- First Section -->
-    <section class="grid-section">
-        <div class="container">
-            <div class="grid-text">
-                <h2>Inloggen</h2>
-                <p>We offer the best services. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet.</p>
-            </div>
-            <div class="grid-icon">
-            </div>
-        </div>
-    </section>
 
     <!-- Second Section -->
     <section class="grid-section light">
