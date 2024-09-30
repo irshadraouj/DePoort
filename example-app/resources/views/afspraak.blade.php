@@ -45,18 +45,6 @@
                 <td id="achternaam-error"></td>
             </tr>
             <tr>
-                <td> adres:</td>
-                <td><input type="text" placeholder="adres" id="adres" onkeyup="foutmelding('adres')"></td>
-                <td id="adres-error"></td>
-            </tr>
-            <tr>
-                <td> postcode:</td>
-                <td><input type="text" placeholder="postcode" id="postcode" onkeyup="foutmelding('postcode')">
-                    <input type="text" placeholder="plaats" id="plaats" onkeyup="foutmelding('plaats')">
-                </td>
-                <td id="postcode-error" id="plaats-error"></td>
-            </tr>
-            <tr>
                 <td> telefoon:</td>
                 <td><input type="number" placeholder="telefoon" id="telefoon" onkeyup="foutmelding('telefoon')"></td>
                 <td id="telefoon-error"></td>
@@ -72,21 +60,35 @@
                 </td>
                 <td id="geslacht-error"></td>
 
-            </tr>
-            <tr>
-                <td> gb.datum:</td>
-                <td><input type="text" placeholder="dd-mm-jjjj" id="geboorte" onkeyup="foutmelding('geboorte')"></td>
-                <td id="geboorte-error"></td>
-
-            </tr>
+            </tr> 
+            
             <tr>
 
                 <td></td>
-                <td><input type="submit" name="submit" value="Account aanmaken"></td>
+                <td><input type="submit" name="submit" value="Afspraak maken"></td>
 
             </tr>
 
         </table>
+
+        <script>
+
+        function foutmelding(id) {
+            //    document.getElementById("naam")
+
+            if (document.getElementById(id).value.length < 2) {
+                document.getElementById(id).style.backgroundColor = "red";
+                document.getElementById(id + '-error').innerHTML = id + " klopt niet,";
+            }
+            else {
+                document.getElementById(id).style.backgroundColor = "lightgreen";
+                document.getElementById(id + '-error').innerHTML = "";
+            }
+        }
+
+
+    </script>
+
     </form>
 
     <!-- Second Section -->
