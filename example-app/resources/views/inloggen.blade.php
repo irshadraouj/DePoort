@@ -18,6 +18,22 @@
   </div>
 </header>
 
+
+
+<!-- Main Content -->
+<main>
+    <!-- First Section -->
+    <section class="grid-section">
+        <div class="container">
+            <div class="grid-text">
+                <h2>Inloggen</h2>
+                <p>We offer the best services. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet.</p>
+            </div>
+            <div class="grid-icon">
+            </div>
+        </div>
+    </section>
+
 <!-- Inlogpagina -->
 <form id="form" method="post">
         <table>
@@ -76,23 +92,6 @@
         </table>
     </form>
 
-    <script>
-
-        function foutmelding(id) {
-            //    document.getElementById("naam")
-
-            if (document.getElementById(id).value.length < 2) {
-                document.getElementById(id).style.backgroundColor = "red";
-                document.getElementById(id + '-error').innerHTML = id + " klopt niet,";
-            }
-            else {
-                document.getElementById(id).style.backgroundColor = "lightgreen";
-                document.getElementById(id + '-error').innerHTML = "";
-            }
-        }
-
-
-    </script>
 
 <!-- Main Content -->
 <main>
