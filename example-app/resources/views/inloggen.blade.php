@@ -38,19 +38,13 @@
 <form id="form" method="post">
         <table>
             <tr>
-                <td><input type="text" placeholder="naam" id="naam" onkeyup="foutmelding('naam')">
-                    <input type="text" placeholder="tsv" id="tsv" onkeyup="foutmelding('tsv')">
-                    <input type="text" placeholder="achternaam" id="achternaam" onkeyup="foutmelding('achternaam')">
+                <td><input type="text" placeholder="gebruikersnaam" id="gebruikersnaam" onkeyup="foutmelding('gebruikersnaam')">
+                    <input type="text" placeholder="wachtwoord" id="wachtwoord" onkeyup="foutmelding('wachtwoord')">
                 </td>
-                <td id="naam-error"></td>
-                <td id="tsv-error"></td>
-                <td id="achternaam-error"></td>
+
             </tr>
             
-            <tr>
-                <td><input type="number" placeholder="telefoon" id="telefoon" onkeyup="foutmelding('telefoon')"></td>
-                <td id="telefoon-error"></td>
-            </tr>
+
             
             <tr>
 
@@ -66,24 +60,6 @@
         
         </table>
     </form>
-
-    <script>
-
-        function foutmelding(id) {
-            //    document.getElementById("naam")
-
-            if (document.getElementById(id).value.length < 2) {
-                document.getElementById(id).style.backgroundColor = "red";
-                document.getElementById(id + '-error').innerHTML = id + " klopt niet,";
-            }
-            else {
-                document.getElementById(id).style.backgroundColor = "lightgreen";
-                document.getElementById(id + '-error').innerHTML = "";
-            }
-        }
-
-
-    </script>
 
 
 
