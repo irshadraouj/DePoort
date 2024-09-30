@@ -1,8 +1,3 @@
-<<<<<<< Updated upstream
-=======
-
-
->>>>>>> Stashed changes
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,40 +6,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-<<<<<<< Updated upstream
-=======
-   
-<form id="form" method="post" action="{{ url('/submit') }}">
-    @csrf
-
-        <table>
-            <tr>
-                <td> naam: </td>
-                <td><input type="text" placeholder="naam" id="naam" onkeyup="foutmelding('naam')">
-                    <input type="text" placeholder="tsv" id="tsv" onkeyup="foutmelding('tsv')">
-                    <input type="text" placeholder="achternaam" id="achternaam" onkeyup="foutmelding('achternaam')">
-                </td>
-                <td id="naam-error"></td>
-                <td id="tsv-error"></td>
-                <td id="achternaam-error"></td>
-            </tr>
-            <tr>
-                <td> adres:</td>
-                <td><input type="text" placeholder="adres" id="adres" onkeyup="foutmelding('adres')"></td>
-                <td id="adres-error"></td>
-            </tr>
-            <tr>
-                <td> postcode:</td>
-                <td><input type="text" placeholder="postcode" id="postcode" onkeyup="foutmelding('postcode')">
-                    <input type="text" placeholder="plaats" id="plaats" onkeyup="foutmelding('plaats')">
-                </td>
-                <td id="postcode-error" id="plaats-error"></td>
-            </tr>
-            <tr>
-                <td> telefoon:</td>
-                <td><input type="number" placeholder="telefoon" id="telefoon" onkeyup="foutmelding('telefoon')"></td>
-                <td id="telefoon-error"></td>
->>>>>>> Stashed changes
 
 <header class="header">
   <!-- navbar groot -->
