@@ -34,7 +34,6 @@
     <form id="form" method="post">
         <table>
             <tr>
-                <td> naam: </td>
                 <td><input type="text" placeholder="naam" id="naam" onkeyup="foutmelding('naam')">
                     <input type="text" placeholder="tsv" id="tsv" onkeyup="foutmelding('tsv')">
                     <input type="text" placeholder="achternaam" id="achternaam" onkeyup="foutmelding('achternaam')">
@@ -44,32 +43,25 @@
                 <td id="achternaam-error"></td>
             </tr>
             <tr>
-                <td> adres:</td>
                 <td><input type="text" placeholder="adres" id="adres" onkeyup="foutmelding('adres')"></td>
                 <td id="adres-error"></td>
             </tr>
             <tr>
-                <td> postcode:</td>
-                <td><input type="text" placeholder="postcode" id="postcode" onkeyup="foutmelding('postcode')">
-                    <input type="text" placeholder="plaats" id="plaats" onkeyup="foutmelding('plaats')">
-                </td>
-                <td id="postcode-error" id="plaats-error"></td>
+                <td><input type="text" placeholder="postcode" id="postcode" onkeyup="foutmelding('postcode')"></td>
+                <td id="postcode-error" ></td>
             </tr>
             <tr>
-            <td> postcode:</td>
                 <td><input type="text" placeholder="woonplaats" id="woonplaats" onkeyup="foutmelding('woonplaats')">
                     <input type="text" placeholder="land" id="land" onkeyup="foutmelding('land')">
                 </td>
                 <td id="woonplaats-error" id="land-error"></td>
             </tr>
             <tr>
-                <td> telefoon:</td>
                 <td><input type="number" placeholder="telefoon" id="telefoon" onkeyup="foutmelding('telefoon')"></td>
                 <td id="telefoon-error"></td>
 
             </tr>
             <tr>
-                <td> geslacht: </td>
                 <td> man <input id="geslacht" type="radio" name="geslacht" onkeyup="foutmelding('geslacht')">
                     <br>
                     vrouw <input id="geslacht" type="radio" name="geslacht">
@@ -80,14 +72,13 @@
 
             </tr>
             <tr>
-                <td> gb.datum:</td>
                 <td><input type="text" placeholder="dd-mm-jjjj" id="geboorte" onkeyup="foutmelding('geboorte')"></td>
                 <td id="geboorte-error"></td>
 
             </tr>
             <tr>
 
-                <td></td>
+                
                 <td><input type="submit" name="submit" value="Account aanmaken"></td>
 
             </tr>
