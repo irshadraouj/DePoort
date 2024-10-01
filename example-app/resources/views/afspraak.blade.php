@@ -64,7 +64,7 @@
 
             </tr>
             <tr>
-            <td> Reden: </td>
+            <td> reden: </td>
                 <td><input type="text" placeholder="reden van uw afspraak" id="reden" onkeyup="foutmelding('reden')">
                     
                 </td>
@@ -73,7 +73,7 @@
             </tr> 
 
             <tr>
-            <td> Tijd: </td>
+            <td> tijd: </td>
                 <td><input type="text" placeholder="Tijd van afspraak" id="reden" onkeyup="foutmelding('tijd')">
                     
                 </td>
