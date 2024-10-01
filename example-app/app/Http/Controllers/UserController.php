@@ -9,8 +9,6 @@ class ProductController extends Controller
 {
     public function store(Request $request)
     {
-        // Validatie kan worden toegevoegd indien gewenst
-
         // Voeg gegevens toe aan de database
         DB::table('client')->insert([
             'naam' => $request->input('naam'),

@@ -8,7 +8,7 @@ class FormController extends Controller
 {
     public function store(Request $request)
     {
-        // Validate the request
+        // Validate de request
         $validatedData = $request->validate([
             'naam' => 'required|string|max:100',
             'tsv' => 'nullable|string|max:50',
@@ -21,10 +21,9 @@ class FormController extends Controller
             'geboorte' => 'required|date_format:d-m-Y',
         ]);
 
-        // Here you can save the data to the database or perform any action
-        // For example:
         // User::create($validatedData);
 
         return redirect()->back()->with('success', 'Account aangemaakt!');
     }
 }
+    
