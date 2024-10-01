@@ -35,20 +35,15 @@
     </section>
 
 <!-- Inlogpagina -->
-<form id="form" method="post">
+<form id="form" method="post"  action="/inloggen">
         <table>
             <tr>
                 <td><input type="text" placeholder="gebruikersnaam" id="gebruikersnaam" onkeyup="foutmelding('gebruikersnaam')">
                     <input type="text" placeholder="wachtwoord" id="wachtwoord" onkeyup="foutmelding('wachtwoord')">
-                    
                 </td>
 
             </tr>
-            
-
-            
             <tr>
-
                 <td><a href="/inloggen" class="inloggen">inloggen</a></td>
     
             </tr>

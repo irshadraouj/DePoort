@@ -18,6 +18,8 @@ Route::get('/inloggen', function () {
     return view('inloggen');
         });
 
+Route::post('/inloggen', [UserController::class, 'inlog']);
+
 Route::get('/overons', function () {
     return view('overons');
         });
