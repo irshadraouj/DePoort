@@ -60,6 +60,25 @@
                 </td>
                 <td id="geslacht-error"></td>
 
+
+
+            </tr>
+            <tr>
+            <td> Reden: </td>
+                <td><input type="text" placeholder="reden van uw afspraak" id="reden" onkeyup="foutmelding('reden')">
+                    
+                </td>
+                <td id="reden-error"></td>
+
+            </tr> 
+
+            <tr>
+            <td> Tijd: </td>
+                <td><input type="text" placeholder="Tijd van afspraak" id="reden" onkeyup="foutmelding('tijd')">
+                    
+                </td>
+                <td id="tijd-error"></td>
+
             </tr> 
             
             <tr>
