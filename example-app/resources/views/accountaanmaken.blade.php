@@ -6,8 +6,9 @@
     <title>Document</title>
 </head>
 <body>
-    
-<table>
+
+<form id="form" method="post">
+        <table>
             <tr>
                 <td> naam: </td>
                 <td><input type="text" placeholder="naam" id="naam" onkeyup="foutmelding('naam')">
@@ -17,6 +18,25 @@
                 <td id="naam-error"></td>
                 <td id="tsv-error"></td>
                 <td id="achternaam-error"></td>
+            </tr>
+            <tr>
+                <td> adres:</td>
+                <td><input type="text" placeholder="adres" id="adres" onkeyup="foutmelding('adres')"></td>
+                <td id="adres-error"></td>
+            </tr>
+            <tr>
+                <td> postcode:</td>
+                <td><input type="text" placeholder="postcode" id="postcode" onkeyup="foutmelding('postcode')">
+                    <input type="text" placeholder="plaats" id="plaats" onkeyup="foutmelding('plaats')">
+                </td>
+                <td id="postcode-error" id="plaats-error"></td>
+            </tr>
+            <tr>
+            <td> postcode:</td>
+                <td><input type="text" placeholder="woonplaats" id="woonplaats" onkeyup="foutmelding('woonplaats')">
+                    <input type="text" placeholder="land" id="land" onkeyup="foutmelding('land')">
+                </td>
+                <td id="woonplaats-error" id="land-error"></td>
             </tr>
             <tr>
                 <td> telefoon:</td>
@@ -35,8 +55,23 @@
                 <td id="geslacht-error"></td>
 
             </tr>
+            <tr>
+                <td> gb.datum:</td>
+                <td><input type="text" placeholder="dd-mm-jjjj" id="geboorte" onkeyup="foutmelding('geboorte')"></td>
+                <td id="geboorte-error"></td>
 
-            <script>
+            </tr>
+            <tr>
+
+                <td></td>
+                <td><input type="submit" name="submit" value="Account aanmaken"></td>
+
+            </tr>
+
+        </table>
+    </form>
+
+    <script>
 
         function foutmelding(id) {
             //    document.getElementById("naam")

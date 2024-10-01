@@ -23,3 +23,7 @@ Route::post('/inloggen', [UserController::class, 'inlog']);
 Route::get('/overons', function () {
     return view('overons');
         });
+
+Route::get('/accountaanmaken', function () {
+        return view('accountaanmaken');
+        });
