@@ -24,7 +24,6 @@
         <div class="container">
             <div class="grid-text">
                 <h2>Account aanmaken</h2>
-                <p>...</p>
             </div>
             <div class="grid-icon">
             </div>
@@ -45,6 +44,25 @@
                 <td id="achternaam-error"></td>
             </tr>
             <tr>
+                <td> adres:</td>
+                <td><input type="text" placeholder="adres" id="adres" onkeyup="foutmelding('adres')"></td>
+                <td id="adres-error"></td>
+            </tr>
+            <tr>
+                <td> postcode:</td>
+                <td><input type="text" placeholder="postcode" id="postcode" onkeyup="foutmelding('postcode')">
+                    <input type="text" placeholder="plaats" id="plaats" onkeyup="foutmelding('plaats')">
+                </td>
+                <td id="postcode-error" id="plaats-error"></td>
+            </tr>
+            <tr>
+            <td> postcode:</td>
+                <td><input type="text" placeholder="woonplaats" id="woonplaats" onkeyup="foutmelding('woonplaats')">
+                    <input type="text" placeholder="land" id="land" onkeyup="foutmelding('land')">
+                </td>
+                <td id="woonplaats-error" id="land-error"></td>
+            </tr>
+            <tr>
                 <td> telefoon:</td>
                 <td><input type="number" placeholder="telefoon" id="telefoon" onkeyup="foutmelding('telefoon')"></td>
                 <td id="telefoon-error"></td>
@@ -60,8 +78,13 @@
                 </td>
                 <td id="geslacht-error"></td>
 
-            </tr> 
-            
+            </tr>
+            <tr>
+                <td> gb.datum:</td>
+                <td><input type="text" placeholder="dd-mm-jjjj" id="geboorte" onkeyup="foutmelding('geboorte')"></td>
+                <td id="geboorte-error"></td>
+
+            </tr>
             <tr>
 
                 <td></td>
@@ -70,8 +93,9 @@
             </tr>
 
         </table>
+    </form>
 
-        <script>
+    <script>
 
         function foutmelding(id) {
             //    document.getElementById("naam")
@@ -97,8 +121,6 @@
             <div class="grid-icon">
             </div>
             <div class="grid-text">
-                <h2>...</h2>
-                <p>...</p>
             </div>
         </div>
     </section>
