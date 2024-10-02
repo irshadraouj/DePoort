@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+@extends("layouts.layout")
+@section("De Poort, welcome")
+@section("content")
 
 <head>
     <title>De Poort</title>
@@ -8,17 +11,6 @@
 </head>
 
 <body>
-
-    <header class="header">
-        <!-- navbar groot -->
-        <div class="navbar">
-            <a href="/" class="homebutton">Home</a>
-            <a href="/inloggen" class="inloggenbutton">Inloggen</a>
-            <a href="/afspraak" class="afspraakmakenbutton">Afspraak maken</a>
-            <a href="/contact" class="contactbutton">Contact</a>
-            <a href="/overons" class="overonsbutton">Over ons</a>
-        </div>
-    </header>
 
     <!-- Main Content -->
     <main>
@@ -77,23 +69,12 @@
         </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>Follow us on:</p>
-            <div class="social-icons">
-                <i class="fa fa-facebook-official"></i>
-                <i class="fa fa-instagram"></i>
-                <i class="fa fa-twitter"></i>
-                <i class="fa fa-linkedin"></i>
-            </div>
-            <p></p>
-        </div>
-    </footer>
+
 
     <!-- External JS -->
     <script src="script.js"></script>
 </body>
+@endsection
 
 </html>
 
@@ -125,9 +106,11 @@
     .navbar a {
         padding: 10px 20px;
         background-color: #488b8f;
+        border: none;
+        border-radius: 60px;
         color: white;
         cursor: pointer;
-        display: inline-block;
+        display:inline-block;
     }
 
     .navbar a:hover {

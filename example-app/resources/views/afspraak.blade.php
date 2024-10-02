@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-
+@extends("layouts.layout")
+@section("De Poort, welcome")
+@section("content")
 <head>
     <title>De Poort</title>
     <meta charset="UTF-8">
@@ -8,17 +10,6 @@
 </head>
 
 <body>
-
-    <header class="header">
-        <!-- navbar groot -->
-        <div class="navbar">
-            <a href="/" class="homebutton">Home</a>
-            <a href="/inloggen" class="inloggenbutton">Inloggen</a>
-            <a href="/afspraak" class="afspraakmakenbutton">Afspraak maken</a>
-            <a href="/contact" class="contactbutton">Contact</a>
-            <a href="/overons" class="overonsbutton">Over ons</a>
-        </div>
-    </header>
     <!-- Main Content -->
     <main>
         <!-- First Section -->
@@ -126,25 +117,10 @@
             </div>
         </section>
     </main>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>Follow us on:</p>
-            <div class="social-icons">
-                <i class="fa fa-facebook-official"></i>
-                <i class="fa fa-instagram"></i>
-                <i class="fa fa-twitter"></i>
-                <i class="fa fa-linkedin"></i>
-            </div>
-            <p></p>
-        </div>
-    </footer>
-
     <!-- External JS -->
     <script src="script.js"></script>
 </body>
-
+@endsection
 </html>
 
 <style>
