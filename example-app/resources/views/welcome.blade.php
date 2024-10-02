@@ -34,20 +34,44 @@
             </div>
         </section>
 
-        <!-- Second Section -->
+        <!-- Openingstijden -->
+
         <section class="grid-section light">
             <div class="container">
                 <div class="grid-icon">
                 </div>
                 <div class="grid-text">
                     <h2>Openingstijden</h2>
-                    <p>Maandag: 08:00-17:00</p>
-                    <p>Dinsdag: 08:00-17:00</p>
-                    <p>Woensdag: 08:00-17:00</p>
-                    <p>Donderdag: 08:00-17:00</p>
-                    <p>Vrijdag: 08:00-17:00</p>
-                    <p>Zaterdag: Gesloten</p>
-                    <p>Zondag: Gesloten</p>
+                    <table>
+                        <tr>
+                            <td>Maandag</td>
+                            <td>08:00-17:00</td>
+                        </tr>
+                        <tr>
+                            <td>Dinsdag</td>
+                            <td>08:00-17:00</td>
+                        </tr>
+                        <tr>
+                            <td>Woensdag</td>
+                            <td>08:00-17:00</td>
+                        </tr>
+                        <tr>
+                            <td>Donderdag</td>
+                            <td>08:00-17:00</td>
+                        </tr>
+                        <tr>
+                            <td>Vrijdag</td>
+                            <td>08:00-17:00</td>
+                        </tr>
+                        <tr>
+                            <td>Zaterdag</td>
+                            <td>Gesloten</td>
+                        </tr>
+                        <tr>
+                            <td>Zondag</td>
+                            <td>Gesloten</td>
+                        </tr>
+                    </table>
                 </div>
             </div>
         </section>
@@ -157,5 +181,21 @@
 
     .footer p {
         margin-bottom: 20px;
+    }
+
+    .grid-text table {
+        width: 39%;
+        border-collapse: collapse;
+    }
+
+    .grid-text th,
+    .grid-text td {
+        border: 1px solid #ddd;
+        padding: 5px;
+        text-align: left;
+    }
+
+    .grid-text th {
+        background-color: #f0f0f0;
     }
 </style>
