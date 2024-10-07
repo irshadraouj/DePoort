@@ -4,17 +4,33 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-Schema::create('users', function (Blueprint $table) {
-    $table->id();
-    $table->string('naam');
-    $table->string('tsv');
-    $table->string('achternaam');
-    $table->string('adres');
-    $table->string('postcode');
-    $table->string('woonplaats');
-    $table->string('land');
-    $table->string('telefoon');
-    $table->date('geboorte');
-    $table->string('geslacht');
-    $table->timestamps();
-});
+class CreateUsersTable extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('users', function (Blueprint $table) {
+            $table->id();
+            $table->string('name');
+            $table->string('email')->unique();
+            $table->timestamp('email_verified_at')->nullable();
+            $table->string('password');
+            $table->rememberToken();
+            $table->timestamps();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('users');
+    }
+}
