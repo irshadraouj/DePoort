@@ -1,9 +1,9 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use Illuminate\Http\Request;
 use App\Models\Client;
+use Illuminate\Support\Facades\Log;
 
 class AccountController extends Controller
 {
@@ -22,10 +22,10 @@ class AccountController extends Controller
             'geslacht' => 'required|string|max:255',
             'geboorte' => 'required|date',
         ]);
-
+    
         // Maak een nieuw client-model aan
         $client = new Client;
-
+    
         // Vul het model met de gegevens
         $client->naam = $req->input('naam');
         $client->tsv = $req->input('tsv');
@@ -37,11 +37,14 @@ class AccountController extends Controller
         $client->telefoon = $req->input('telefoon');
         $client->geslacht = $req->input('geslacht');
         $client->geboorte = $req->input('geboorte');
-
-        // Sla het client op in de database
+    
         $client->save();
-
-        return response()->json(['message' => 'Client opgeslagen!']);
+        try {
+            $client->save();
+            return response()->json(['message' => 'Client opgeslagen!']);
+        } catch (\Exception $e) {
+            Log::error('Opslaan in de database is mislukt: ' . $e->getMessage());
+            return response()->json(['message' => 'Er is een fout opgetreden.'], 500);
+        }
     }
-}
-
+}        

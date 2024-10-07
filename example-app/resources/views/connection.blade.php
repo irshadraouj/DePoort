@@ -1,14 +1,22 @@
-<?php
-$dbhost = "localhost";
-  $dbuser = "root";
-  $dbpass = "";
-  $dbname = "9weken";
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div>
+    <?php
+    use Illuminate\Support\Facades\DB;
 
-  //connects to database
-  $con = new mysqli($dbhost, $dbuser, $dbpass, $dbname);
+          if(DB::connection()->getPdo()){
+            echo"Successfully Connected to DB and DB name is".DB::connection()->getDatabaseName();
+          }
+    ?>
+  </div>
+</body>
+</html>
 
-  if ($con->connect_error) {
-    die("Connection failed: " . $con->connect_error);
-  }
-  echo "Connected successfully";
-  ?>
+
+

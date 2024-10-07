@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\AccountController; // Voeg deze regel toe
+use App\Http\Controllers\AccountController; 
 
 Route::get('/', function () {
     return view('welcome');

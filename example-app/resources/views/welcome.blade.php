@@ -31,7 +31,7 @@
     </section>
 
     <!-- afspraak maken -->
-    <form id="form" action="/submit-data" method="POST" >
+    <form id="form" action="/submit-data"   method="POST" >
     @csrf
         <table>
             <tr>
@@ -79,8 +79,12 @@
             </tr>
             <tr>
 
-                
+            @if(session('success'))
+    <div>{{ session('success') }}</div>
+@endif
+
                 <td><input type="submit" name="submit" value="Account aanmaken"></td>
+                
 
             </tr>
 
