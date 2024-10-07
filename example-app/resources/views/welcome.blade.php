@@ -100,18 +100,18 @@
     .navbar {
         background-color: #5ea3a3;
         padding: 10px;
+    
     }
 
     /* Style for navigation links */
     .navbar a {
-        padding: 10px 20px;
+        padding: 10px 80px;
         background-color: #488b8f;
         border: none;
         border-radius: 60px;
         color: white;
         cursor: pointer;
         display:inline-block;
-
     }
 
     .navbar a:hover {
