@@ -96,6 +96,7 @@
     /* Style for navigation links */
     .navbar a {
         padding: 10px 20px;
+        border-radius: 60px;
         background-color: #488b8f;
         color: white;
         cursor: pointer;
@@ -159,7 +160,7 @@
     body {
         font-family: Arial, sans-serif;
         background-color: #f4f4f4;
-        padding: 20px;
+       /* padding: 20px;*/
     }
 
     table {

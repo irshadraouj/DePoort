@@ -75,6 +75,7 @@
     /* Style for navigation links */
     .navbar a {
         padding: 10px 20px;
+        border-radius: 60px;
         background-color: #488b8f;
         color: white;
         cursor: pointer;

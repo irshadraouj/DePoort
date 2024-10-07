@@ -145,6 +145,7 @@
     /* Style for navigation links */
     .navbar a {
         padding: 10px 20px;
+        border-radius: 60px;
         background-color: #488b8f;
         color: white;
         cursor: pointer;
@@ -152,7 +153,7 @@
     }
 
     .navbar a:hover {
-        background-color: #333;
+        background-color: #333;     
     }
 
     /* Header */
@@ -204,12 +205,7 @@
         margin-bottom: 20px;
     }
 
-    /* form */
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #f4f4f4;
-        padding: 20px;
-    }
+    
 
     table {
         width: 100%;
@@ -240,13 +236,13 @@
     }
 
     input[type="submit"] {
-        background-color: #4CAF50;
+        background-color: #5ea3a3;
         color: white;
         cursor: pointer;
     }
 
     input[type="submit"]:hover {
-        background-color: #45a049;
+        background-color: #488b8f;
     }
 
     td:first-child {

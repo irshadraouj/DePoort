@@ -111,6 +111,7 @@
         color: white;
         cursor: pointer;
         display:inline-block;
+
     }
 
     .navbar a:hover {
