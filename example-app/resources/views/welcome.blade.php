@@ -182,4 +182,9 @@
     .grid-text th {
         background-color: #f0f0f0;
     }
+
+    #logo{
+        width: 200px;
+        height: 100px;
+    }
 </style>

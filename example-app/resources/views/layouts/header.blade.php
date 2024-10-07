@@ -10,7 +10,7 @@
 <header class="header">
         <!-- navbar groot -->
         <div class="navbar">
-        <img src="Images/logo.png" alt="Logo">
+        <img src="Images/logo.png" id="logo" alt="Logo">
             <a href="/" class="homebutton">Home</a>
             <a href="/inloggen" class="inloggenbutton">Inloggen</a>
             <a href="/afspraak" class="afspraakmakenbutton">Afspraak maken</a>
