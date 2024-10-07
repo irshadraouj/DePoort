@@ -134,4 +134,9 @@
     .footer p {
         margin-bottom: 20px;
     }
+
+    .logo{
+        width: 200px;
+        height: 100px;
+    }
 </style>

@@ -183,7 +183,7 @@
         background-color: #f0f0f0;
     }
 
-    #logo{
+    .logo{
         width: 200px;
         height: 100px;
     }

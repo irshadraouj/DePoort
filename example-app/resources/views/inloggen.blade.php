@@ -234,4 +234,8 @@
             width: 100%;
         }
     }
+    .logo{
+        width: 200px;
+        height: 100px;
+    }
 </style>
