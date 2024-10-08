@@ -18,8 +18,13 @@
         <section class="grid-section">
             <div class="container">
                 <div class="grid-text">
-                    <h2>De Poort</h2>
-                    <p>Welkom bij Huisartspraktijk De Poort.</p>
+                    <h2>Welkom bij Huisartsenpraktijk De Poort</h2>
+                    <h1>Uw gezondheid, onze hoogste prioriteit</h1>
+                    <p>Bij Huisartsenpraktijk De Poort staat persoonlijke en deskundige zorg centraal. 
+                        Ons team van ervaren huisartsen, verpleegkundigen en praktijkondersteuners staat klaar 
+                        om u te helpen bij al uw medische vragen en gezondheidsproblemen. 
+                        Wij geloven in een laagdrempelige, patiëntgerichte benadering, 
+                        waarbij uw welzijn altijd voorop staat.</p>
                 </div>
                 <div class="grid-icon">
                 </div>
