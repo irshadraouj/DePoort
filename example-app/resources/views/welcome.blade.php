@@ -105,11 +105,6 @@
 
     /* Style for navigation links */
     .navbar a {
-<<<<<<< HEAD
-        padding: 10px 20px;
-=======
-        padding: 10px 25px;
->>>>>>> f404a73a84eeeafa8ce5d087fd313af3049c678a
         background-color: #488b8f;
         border: none;
         border-radius: 60px;
