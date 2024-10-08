@@ -16,8 +16,21 @@
         <section class="grid-section">
             <div class="container">
                 <div class="grid-text">
-                    <h2>Contact</h2>
-                    <p>...</p>
+                    <h1>Spoednummer:</h1>
+                    <b>0651486610</b>
+                    <br></br>   
+                    <p>Heeft u een vraag, wilt u een afspraak maken of heeft u medische ondersteuning nodig? 
+                        Neem dan contact met ons op of kom langs in onze praktijk</p>
+                    <br>
+                    <b>Adres:</b>
+                    <p>12055 Summit Cir</p>
+                    <p>CA 90210, Beverly Hills</p>
+                    <b>E-mail:</b>
+                    <p>info@huisartsenpraktijkdepoort.nl</p>
+                    <b>Routebeschrijving:</b>
+                    <p>Onze praktijk is centraal gelegen en goed bereikbaar met zowel de auto als het openbaar vervoer. 
+                       Klik hier voor een routebeschrijving.</p>
+                    <p>Wij heten u van harte welkom bij Huisartsenpraktijk De Poort!</p>
                 </div>
                 <div class="grid-icon">
                 </div>
@@ -30,13 +43,8 @@
                 <div class="grid-icon">
                 </div>
                 <div class="grid-text">
-                    <h2>Spoednummer:
-                        06 51486610
-                    </h2>
-                    <p>
-                        Huisartspraktijk De Poort
-                        Medemoog
-                    </p>
+                    <h1>...</h1>
+                    <b>...</b>
                 </div>
             </div>
         </section>

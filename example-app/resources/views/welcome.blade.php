@@ -18,13 +18,45 @@
         <section class="grid-section">
             <div class="container">
                 <div class="grid-text">
-                    <h2>Welkom bij Huisartsenpraktijk De Poort</h2>
-                    <h1>Uw gezondheid, onze hoogste prioriteit</h1>
-                    <p>Bij Huisartsenpraktijk De Poort staat persoonlijke en deskundige zorg centraal. 
-                        Ons team van ervaren huisartsen, verpleegkundigen en praktijkondersteuners staat klaar 
-                        om u te helpen bij al uw medische vragen en gezondheidsproblemen. 
-                        Wij geloven in een laagdrempelige, patiëntgerichte benadering, 
+                    
+                    <h1>Welkom bij Huisartsenpraktijk De Poort</h1>
+                    <b> Uw gezondheid, onze hoogste prioriteit</b>
+                    <p> Bij Huisartsenpraktijk De Poort staat persoonlijke en deskundige zorg centraal.
+                        Ons team van ervaren huisartsen, verpleegkundigen en praktijkondersteuners staat klaar
+                        om u te helpen bij al uw medische vragen en gezondheidsproblemen.
+                        Wij geloven in een laagdrempelige, patiëntgerichte benadering,
                         waarbij uw welzijn altijd voorop staat.</p>
+                    
+                    <h1>______________________________________________</h1>
+
+                    <h1>Onze Zorgdiensten</h1>
+                    <p>Wij bieden een uitgebreid scala aan medische diensten, 
+                       gericht op het bevorderen van uw gezondheid en welzijn:</p>
+                    <b>Algemene Huisartsgeneeskunde:</b>
+                    <p>Van consulten en medische controles tot behandelingen en verwijzingen.</p>
+                    <b>Preventieve Zorg:</b>
+                    <p>Gezondheidschecks, reisvaccinaties en advies over leefstijl en voeding.</p>
+                    <b>Psychische Ondersteuning:</b>
+                    <p>Begeleiding bij stress, burn-out, angst en depressie.</p>
+                    <b>Chronische Zorg:</b>
+                    <p>Behandeling en begeleiding van chronische aandoeningen zoals diabetes, hart- en vaatziekten, en astma.</p>
+                    <b>Specialistische Zorg:</b>
+                    <p>Spreekuren voor huidklachten, allergieën en kleine chirurgische ingrepen.</p>
+
+                    <h1>______________________________________________</h1>
+
+                    <h1>Waarom Kiezen voor Huisartsenpraktijk De Poort?</h1>
+                    <b>Toegankelijke en persoonlijke zorg:</b>
+                    <p>Wij kennen onze patiënten bij naam en nemen de tijd voor elke afspraak.</p>
+                    <b>Moderne faciliteiten:</b>
+                    <p>Onze praktijk is voorzien van de nieuwste apparatuur en een patiëntvriendelijke omgeving.</p>
+                    <b>Samenwerking met specialisten:</b>
+                    <p>Wij werken nauw samen met specialisten en zorgverleners in de regio voor een complete zorgervaring.</p>
+                    <b>Online afspraken en herhaalrecepten:</b>
+                    <p>Plan uw afspraak eenvoudig online en vraag herhaalrecepten snel aan via ons patiëntenportaal.</p>
+
+                    <h1>______________________________________________</h1>
+
                 </div>
                 <div class="grid-icon">
                 </div>
@@ -105,7 +137,7 @@
     .navbar {
         background-color: #5ea3a3;
         padding: 10px;
-    
+
     }
 
     /* Style for navigation links */
@@ -187,7 +219,7 @@
         background-color: #f0f0f0;
     }
 
-    .logo{
+    .logo {
         width: 200px;
         height: 100px;
     }
