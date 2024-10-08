@@ -31,7 +31,7 @@
                 </div>
                 <div class="grid-text">
                     <h2>Spoednummer:
-                        0612345678
+                        06 51486610
                     </h2>
                     <p>
                         Huisartspraktijk De Poort
