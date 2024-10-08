@@ -3,6 +3,7 @@
 @extends("layouts.layout")
 @section("De Poort, welcome")
 @section("content")
+
 <head>
     <title>De Poort</title>
     <meta charset="UTF-8">
@@ -18,8 +19,8 @@
                 <div class="grid-text">
                     <h1>Spoednummer:</h1>
                     <b>0651486610</b>
-                    <br></br>   
-                    <p>Heeft u een vraag, wilt u een afspraak maken of heeft u medische ondersteuning nodig? 
+                    <br></br>
+                    <p>Heeft u een vraag, wilt u een afspraak maken of heeft u medische ondersteuning nodig?
                         Neem dan contact met ons op of kom langs in onze praktijk</p>
                     <br>
                     <b>Adres:</b>
@@ -28,8 +29,8 @@
                     <b>E-mail:</b>
                     <p>info@huisartsenpraktijkdepoort.nl</p>
                     <b>Routebeschrijving:</b>
-                    <p>Onze praktijk is centraal gelegen en goed bereikbaar met zowel de auto als het openbaar vervoer. 
-                       Klik hier voor een routebeschrijving.</p>
+                    <p>Onze praktijk is centraal gelegen en goed bereikbaar met zowel de auto als het openbaar vervoer.
+                        Klik hier voor een routebeschrijving.</p>
                     <p>Wij heten u van harte welkom bij Huisartsenpraktijk De Poort!</p>
                 </div>
                 <div class="grid-icon">
@@ -40,12 +41,16 @@
         <!-- Second Section -->
         <section class="grid-section light">
             <div class="container">
+            <h1>Volg ons</h1>
                 <div class="grid-icon">
                 </div>
-                <div class="grid-text">
-                    <h1>...</h1>
-                    <b>...</b>
+                
+                <div class="social-icons">
+                    <img src="Images/facebook.png" class="social-icons" alt="facebook">
+                    <img src="Images/instagram.png" class="social-icons" alt="instagram">
+                    <img src="Images/twitter.png" class="social-icons" alt="twitter">
                 </div>
+            </div>
             </div>
         </section>
     </main>
@@ -54,6 +59,7 @@
     <script src="script.js"></script>
 </body>
 @endsection
+
 </html>
 
 <style>
@@ -143,8 +149,15 @@
         margin-bottom: 20px;
     }
 
-    .logo{
+    .logo {
         width: 200px;
         height: 100px;
     }
+
+    .social-icons img {
+    width: 125px;
+    height: 120px;
+    display: inline-block;
+    margin-right: 10px;
+}
 </style>
