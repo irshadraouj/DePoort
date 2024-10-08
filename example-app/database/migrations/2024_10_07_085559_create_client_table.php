@@ -24,7 +24,7 @@ class CreateClientTable extends Migration
             $table->string('telefoon');
             $table->string('geslacht');
             $table->date('geboorte');
-            $table->timestamps();
+            
         });
     }
 

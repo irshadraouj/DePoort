@@ -73,7 +73,7 @@
 
             </tr>
             <tr>
-                <td><input type="text" name="geboorte" placeholder="dd-mm-jjjj" id="geboorte" onkeyup="foutmelding('geboorte')"></td>
+                <td><input type="date" name="geboorte" placeholder="dd-mm-jjjj" id="geboorte" onkeyup="foutmelding('geboorte')"></td>
                 <td id="geboorte-error"></td>
 
             </tr>
