@@ -78,11 +78,6 @@
 
             </tr>
             <tr>
-
-            @if(session('success'))
-    <div>{{ session('success') }}</div>
-@endif
-
                 <td><input type="submit" name="submit" value="Account aanmaken"></td>
                 
 
@@ -135,9 +130,6 @@
         <p></p>
     </div>
 </footer>
-
-<!-- External JS -->
-<script src="script.js"></script>
 </body>
 </html>
 

@@ -14,7 +14,6 @@ class CreateClientTable extends Migration
     public function up()
     {
         Schema::create('client', function (Blueprint $table) {
-            $table->id();
             $table->string('naam');
             $table->string('tsv');
             $table->string('achternaam');
@@ -25,6 +24,7 @@ class CreateClientTable extends Migration
             $table->string('telefoon');
             $table->string('geslacht');
             $table->date('geboorte');
+            $table->timestamps();
         });
     }
 
