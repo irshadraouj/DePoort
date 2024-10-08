@@ -105,12 +105,12 @@
 
     /* Style for navigation links */
     .navbar a {
-        background-color: #488b8f;
-        border: none;
+        padding: 10px 20px;
         border-radius: 60px;
+        background-color: #488b8f;
         color: white;
         cursor: pointer;
-        display:inline-block;
+        display: inline-block;
     }
 
     .navbar a:hover {
