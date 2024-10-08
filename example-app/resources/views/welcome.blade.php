@@ -223,4 +223,10 @@
         width: 200px;
         height: 100px;
     }
+    .social-icons img {
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+    margin-right: 10px;
+}
 </style>
