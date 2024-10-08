@@ -24,49 +24,50 @@
         </section>
 
         <!-- afspraak maken -->
-        <form id="form" method="post">
+        <form id="form" action="/submit-data" method="post">
+        @csrf
             <table>
                 <tr>
-                    <td><input type="text" placeholder="naam" id="naam" onkeyup="foutmelding('naam')">
-                        <input type="text" placeholder="tsv" id="tsv" onkeyup="foutmelding('tsv')">
-                        <input type="text" placeholder="achternaam" id="achternaam" onkeyup="foutmelding('achternaam')">
+                    <td><input type="text" name="naam" placeholder="naam" id="naam" onkeyup="foutmelding('naam')">
+                        <input type="text" name="tsv" placeholder="tsv" id="tsv" onkeyup="foutmelding('tsv')">
+                        <input type="text" name="achternaam" placeholder="achternaam" id="achternaam" onkeyup="foutmelding('achternaam')">
                     </td>
                     <td id="naam-error"></td>
                     <td id="tsv-error"></td>
                     <td id="achternaam-error"></td>
                 </tr>
                 <tr>
-                    <td><input type="text" placeholder="adres" id="adres" onkeyup="foutmelding('adres')"></td>
+                    <td><input type="text" name="adres" placeholder="adres" id="adres" onkeyup="foutmelding('adres')"></td>
                     <td id="adres-error"></td>
                 </tr>
                 <tr>
-                    <td><input type="text" placeholder="postcode" id="postcode" onkeyup="foutmelding('postcode')"></td>
+                    <td><input type="text" name="postcode" placeholder="postcode" id="postcode" onkeyup="foutmelding('postcode')"></td>
                     <td id="postcode-error"></td>
                 </tr>
                 <tr>
-                    <td><input type="text" placeholder="woonplaats" id="woonplaats" onkeyup="foutmelding('woonplaats')">
-                        <input type="text" placeholder="land" id="land" onkeyup="foutmelding('land')">
+                    <td><input type="text" name="woonplaats" placeholder="woonplaats" id="woonplaats" onkeyup="foutmelding('woonplaats')">
+                        <input type="text" name="land" placeholder="land" id="land" onkeyup="foutmelding('land')">
                     </td>
                     <td id="woonplaats-error" id="land-error"></td>
                 </tr>
                 <tr>
-                    <td><input type="number" placeholder="telefoon" id="telefoon" onkeyup="foutmelding('telefoon')">
+                    <td><input type="number" name="telefoon" placeholder="telefoon" id="telefoon" onkeyup="foutmelding('telefoon')">
                     </td>
                     <td id="telefoon-error"></td>
 
                 </tr>
                 <tr>
-                    <td> man <input id="geslacht" type="radio" name="geslacht" onkeyup="foutmelding('geslacht')">
+                    <td> man <input id="geslacht" name="geslacht" type="radio" name="geslacht" onkeyup="foutmelding('geslacht')">
                         <br>
-                        vrouw <input id="geslacht" type="radio" name="geslacht">
+                        vrouw <input id="geslacht" name="geslacht" type="radio" name="geslacht">
                         <br>
-                        iets anders<input id="geslacht" type="radio" name="geslacht">
+                        iets anders<input id="geslacht" name="geslacht" type="radio" name="geslacht">
                     </td>
                     <td id="geslacht-error"></td>
 
                 </tr>
                 <tr>
-                    <td><input type="text" placeholder="dd-mm-jjjj" id="geboorte" onkeyup="foutmelding('geboorte')">
+                    <td><input type="date" name="geboorte" placeholder="dd-mm-jjjj" id="geboorte" onkeyup="foutmelding('geboorte')">
                     </td>
                     <td id="geboorte-error"></td>
 
