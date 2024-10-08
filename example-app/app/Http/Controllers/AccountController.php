@@ -20,5 +20,6 @@ class AccountController extends Controller
         $client->geslacht = $req->geslacht;
         $client->geboorte = $req->geboorte;
         $client->save();
+        return redirect()->back();
     }
 }
