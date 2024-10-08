@@ -18,7 +18,7 @@
         <section class="grid-section">
             <div class="container">
                 <div class="grid-text">
-                    
+
                     <h1>Welkom bij Huisartsenpraktijk De Poort</h1>
                     <b> Uw gezondheid, onze hoogste prioriteit</b>
                     <p> Bij Huisartsenpraktijk De Poort staat persoonlijke en deskundige zorg centraal.
@@ -55,7 +55,6 @@
                     <b>Online afspraken en herhaalrecepten:</b>
                     <p>Plan uw afspraak eenvoudig online en vraag herhaalrecepten snel aan via ons patiëntenportaal.</p>
 
-                    <h1>______________________________________________</h1>
 
                 </div>
                 <div class="grid-icon">
