@@ -120,7 +120,7 @@
     /* Header */
     .header {
         background-color: #5ea3a3;
-        padding: 35px 0;
+        padding: 20px 0;
         text-align: left;
     }
 
