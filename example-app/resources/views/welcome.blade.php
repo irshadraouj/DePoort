@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 <!DOCTYPE html>
 <html lang="en">
 @extends("layouts.layout")
@@ -222,3 +223,5 @@
         width: 200px;
         height: 100px;
 </style>
+=======
+>>>>>>> Stashed changes
