@@ -41,15 +41,11 @@
         <!-- Second Section -->
         <section class="grid-section light">
             <div class="container">
-            <h1>Volg ons</h1>
+                <h1>Volg ons</h1>
                 <div class="grid-icon">
                 </div>
-                
-                <div class="social-icons">
-                    <img src="Images/facebook.png" class="social-icons" alt="facebook">
-                    <img src="Images/instagram.png" class="social-icons" alt="instagram">
-                    <img src="Images/twitter.png" class="social-icons" alt="twitter">
-                </div>
+
+
             </div>
             </div>
         </section>
@@ -154,10 +150,24 @@
         height: 100px;
     }
 
-    .social-icons img {
-    width: 125px;
-    height: 125px;
-    display: inline-block;
-    margin-right: 10px;
-}
+    #facebook {
+        width: 40px;
+        height: 40px;
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+    #instagram {
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+    #twitter {
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        margin-right: 10px;
+    }
 </style>
