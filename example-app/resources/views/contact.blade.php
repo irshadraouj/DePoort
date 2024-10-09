@@ -103,7 +103,7 @@
     /* Header */
     .header {
         background-color: #5ea3a3;
-        padding: 35px 0;
+        padding: 20px 0;
         text-align: left;
     }
 
@@ -156,7 +156,7 @@
 
     .social-icons img {
     width: 125px;
-    height: 120px;
+    height: 125px;
     display: inline-block;
     margin-right: 10px;
 }

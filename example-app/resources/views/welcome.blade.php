@@ -137,7 +137,6 @@
     .navbar {
         background-color: #5ea3a3;
         padding: 10px;
-
     }
 
     /* Style for navigation links */
