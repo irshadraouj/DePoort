@@ -8,6 +8,7 @@ class AccountController extends Controller
 {
     public function datasubmit(Request $req)
     {
+        dd($req->all());
         $client = new Client;
         $client->naam = $req->naam;
         $client->tsv = $req->tsv;
