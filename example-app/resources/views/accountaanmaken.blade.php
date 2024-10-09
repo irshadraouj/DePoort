@@ -57,11 +57,11 @@
 
                 </tr>
                 <tr>
-                    <td> man <input id="geslacht" name="geslacht" type="radio" name="geslacht" onkeyup="foutmelding('geslacht')">
+                    <td> man <input id="geslacht" value="man" name="geslacht" type="radio" name="geslacht" onkeyup="foutmelding('geslacht')">
                         <br>
-                        vrouw <input id="geslacht" name="geslacht" type="radio" name="geslacht">
+                        vrouw <input id="geslacht" value="vrouw" name="geslacht" type="radio" name="geslacht">
                         <br>
-                        iets anders<input id="geslacht" name="geslacht" type="radio" name="geslacht">
+                        iets anders<input id="geslacht" value="iets anders" name="geslacht" type="radio" name="geslacht">
                     </td>
                     <td id="geslacht-error"></td>
 
