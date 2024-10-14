@@ -237,4 +237,18 @@
         width: 200px;
         height: 100px;
     }
+    /* icons */
+.social-icons a {
+    text-decoration: none;
+    margin: 0 10px;
+    color: #5ea3a3; /* Zwart */
+}
+
+.social-icons a:hover {
+    color: #000; /* Blauw bij hover */
+}
+
+.social-icons i {
+    font-size: 24px; /* Grootte van het icoon */
+}
 </style>
