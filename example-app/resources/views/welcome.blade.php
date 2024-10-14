@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 @extends("layouts.layout")
@@ -27,12 +26,14 @@
                         om u te helpen bij al uw medische vragen en gezondheidsproblemen.
                         Wij geloven in een laagdrempelige, patiëntgerichte benadering,
                         waarbij uw welzijn altijd voorop staat.</p>
-                    
+
+                    <br>
                     <h1>______________________________________________</h1>
+                    <br>
 
                     <h1>Onze Zorgdiensten</h1>
-                    <p>Wij bieden een uitgebreid scala aan medische diensten, 
-                       gericht op het bevorderen van uw gezondheid en welzijn:</p>
+                    <p>Wij bieden een uitgebreid scala aan medische diensten,
+                        gericht op het bevorderen van uw gezondheid en welzijn:</p>
                     <b>Algemene Huisartsgeneeskunde:</b>
                     <p>Van consulten en medische controles tot behandelingen en verwijzingen.</p>
                     <b>Preventieve Zorg:</b>
@@ -40,19 +41,23 @@
                     <b>Psychische Ondersteuning:</b>
                     <p>Begeleiding bij stress, burn-out, angst en depressie.</p>
                     <b>Chronische Zorg:</b>
-                    <p>Behandeling en begeleiding van chronische aandoeningen zoals diabetes, hart- en vaatziekten, en astma.</p>
+                    <p>Behandeling en begeleiding van chronische aandoeningen zoals diabetes, hart- en vaatziekten, en
+                        astma.</p>
                     <b>Specialistische Zorg:</b>
                     <p>Spreekuren voor huidklachten, allergieën en kleine chirurgische ingrepen.</p>
 
+                    <br>
                     <h1>______________________________________________</h1>
+                    <br>
 
-                    <h1>Waarom Kiezen voor Huisartsenpraktijk De Poort?</h1>
+                    <h1>Waarom kiezen voor Huisartsenpraktijk De Poort?</h1>
                     <b>Toegankelijke en persoonlijke zorg:</b>
                     <p>Wij kennen onze patiënten bij naam en nemen de tijd voor elke afspraak.</p>
                     <b>Moderne faciliteiten:</b>
                     <p>Onze praktijk is voorzien van de nieuwste apparatuur en een patiëntvriendelijke omgeving.</p>
                     <b>Samenwerking met specialisten:</b>
-                    <p>Wij werken nauw samen met specialisten en zorgverleners in de regio voor een complete zorgervaring.</p>
+                    <p>Wij werken nauw samen met specialisten en zorgverleners in de regio voor een complete
+                        zorgervaring.</p>
                     <b>Online afspraken en herhaalrecepten:</b>
                     <p>Plan uw afspraak eenvoudig online en vraag herhaalrecepten snel aan via ons patiëntenportaal.</p>
 
@@ -222,18 +227,22 @@
         width: 200px;
         height: 100px;
     }
+
     /* icons */
-.social-icons a {
-    text-decoration: none;
-    margin: 0 10px;
-    color: #5ea3a3; /* Zwart */
-}
+    .social-icons a {
+        text-decoration: none;
+        margin: 0 10px;
+        color: #5ea3a3;
+        /* Zwart */
+    }
 
-.social-icons a:hover {
-    color: #000; /* Blauw bij hover */
-}
+    .social-icons a:hover {
+        color: #000;
+        /* Blauw bij hover */
+    }
 
-.social-icons i {
-    font-size: 24px; /* Grootte van het icoon */
-}
+    .social-icons i {
+        font-size: 24px;
+        /* Grootte van het icoon */
+    }
 </style>
