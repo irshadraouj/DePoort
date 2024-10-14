@@ -19,8 +19,13 @@
         <section class="grid-section">
             <div class="container">
                 <div class="grid-text">
-                    <h2>Over ons</h2>
-                    <p>...</p>
+                    <h1>Ons Team</h1>
+                    <p>Ons toegewijde team van ervaren huisartsen, 
+                    praktijkondersteuners en assistentes staat altijd klaar 
+                    om u de beste zorg te bieden. Wij volgen de nieuwste ontwikkelingen 
+                    binnen de medische wetenschap en werken nauw samen met apotheken, 
+                    fysiotherapeuten, specialisten en ziekenhuizen om ervoor 
+                    te zorgen dat u de zorg krijgt die u nodig heeft.</p>
                 </div>
                 <div class="grid-icon">
                 </div>

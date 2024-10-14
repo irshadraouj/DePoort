@@ -41,7 +41,6 @@
         <!-- Second Section -->
         <section class="grid-section light">
             <div class="container">
-                <h1>Volg ons</h1>
                 <div class="grid-icon">
                 </div>
 
