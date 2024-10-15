@@ -1,23 +1,21 @@
 <?php
-// Database configuration
-$host = 'localhost'; // Database host
-$db = '9weken';    // Database name
-$user = 'root'; // Database username
-$pass = ''; // Database password
+$host = 'localhost'; 
+$db = '9weken';    
+$user = 'root'; 
+$pass = ''; 
 
-// Create a connection
+//maak connectie
 $conn = new mysqli($host, $user, $pass, $db);
 
-// Check connection
+// Check connectie
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-// Prepare and bind
 $stmt = $conn->prepare("INSERT INTO client (naam, tsv, achternaam, adres, postcode, plaats, telefoon, gender, gbdatum) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)");
 $stmt->bind_param("ssisssssss", $naam, $tsv, $achternaam, $adres, $postcode, $plaats, $telefoon, $gender, $gbdatum);
 
-// Get data from the form
+// data halen van form
 $name = $_POST['naam'];
 $tsv = $_POST['tsv'];
 $last_name = $_POST['achternaam'];
@@ -28,14 +26,14 @@ $phone = $_POST['telefoon'];
 $gender = $_POST['geslacht'];
 $birthdate = date('Y-m-d', strtotime($_POST['geboorte'])); // Convert to MySQL date format
 
-// Execute the statement
+// uitvoeren
 if ($stmt->execute()) {
     echo "New record created successfully";
 } else {
     echo "Error: " . $stmt->error;
 }
 
-// Close connections
+// connectie afsluiten
 $stmt->close();
 $conn->close();
 ?>

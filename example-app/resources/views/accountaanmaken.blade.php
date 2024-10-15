@@ -25,48 +25,69 @@
 
         <!-- afspraak maken -->
         <form id="form" action="/submit-data" method="post">
-            @csrf
+        @csrf
             <table>
                 <tr>
                     <td><input type="text" name="naam" placeholder="naam" id="naam" onkeyup="foutmelding('naam')">
-                        <input type="text" name="tsv" placeholder="tsv" id="tsv" onkeyup="foutmelding('tsv')">
-                        <input type="text" name="achternaam" placeholder="achternaam" id="achternaam" onkeyup="foutmelding('achternaam')">
                     </td>
                     <td id="naam-error"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" name="tsv" placeholder="tsv" id="tsv" onkeyup="foutmelding('tsv')">
+                    </td>
                     <td id="tsv-error"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" name="achternaam" placeholder="achternaam" id="achternaam" onkeyup="foutmelding('achternaam')">
+                    </td>
                     <td id="achternaam-error"></td>
                 </tr>
                 <tr>
+                    <td><input type="text" name="adres" placeholder="adres" id="adres" onkeyup="foutmelding('adres')"></td>
                     <td><input type="text" name="adres" placeholder="adres" id="adres" onkeyup="foutmelding('adres')"></td>
                     <td id="adres-error"></td>
                 </tr>
                 <tr>
                     <td><input type="text" name="postcode" placeholder="postcode" id="postcode" onkeyup="foutmelding('postcode')"></td>
+                    <td><input type="text" name="postcode" placeholder="postcode" id="postcode" onkeyup="foutmelding('postcode')"></td>
                     <td id="postcode-error"></td>
                 </tr>
                 <tr>
                     <td><input type="text" name="woonplaats" placeholder="woonplaats" id="woonplaats" onkeyup="foutmelding('woonplaats')">
+                    </td>
+                    <td id="woonplaats-error"></td>
+                </tr>
+                <tr>
+                    <td>
                         <input type="text" name="land" placeholder="land" id="land" onkeyup="foutmelding('land')">
                     </td>
-                    <td id="woonplaats-error" id="land-error"></td>
+                    <td id="land-error"></td>
                 </tr>
                 <tr>
                     <td><input type="number" name="telefoon" placeholder="telefoon" id="telefoon" onkeyup="foutmelding('telefoon')">
+                    <td><input type="number" name="telefoon" placeholder="telefoon" id="telefoon" onkeyup="foutmelding('telefoon')">
                     </td>
                     <td id="telefoon-error"></td>
-
+                    <tr>
+                    <td><input type="password" name="wachtwoord" placeholder="wachtwoord" id="wachtwoord" onkeyup="foutmelding('wachtwoord')">
+                    </td>
+                    <td id="wachtwoord-error"></td>
+                </tr>
                 </tr>
                 <tr>
-                    <td> man <input id="geslacht" value="man" name="geslacht" type="radio" name="geslacht" onkeyup="foutmelding('geslacht')">
+                    <td> man <input id="geslacht" value="man" type="radio" name="geslacht" onkeyup="foutmelding('geslacht')">
                         <br>
-                        vrouw <input id="geslacht" value="vrouw" name="geslacht" type="radio" name="geslacht">
+                        vrouw <input id="geslacht" value="vrouw" type="radio" name="geslacht">
                         <br>
-                        iets anders<input id="geslacht" value="iets anders" name="geslacht" type="radio" name="geslacht">
+                        iets anders<input id="geslacht" value="iets anders" type="radio" name="geslacht">
                     </td>
                     <td id="geslacht-error"></td>
 
                 </tr>
                 <tr>
+                    <td><input type="date" name="geboorte" placeholder="dd-mm-jjjj" id="geboorte" onkeyup="foutmelding('geboorte')">
                     <td><input type="date" name="geboorte" placeholder="dd-mm-jjjj" id="geboorte" onkeyup="foutmelding('geboorte')">
                     </td>
                     <td id="geboorte-error"></td>
@@ -83,22 +104,35 @@
         </form>
 
         <script>
+    function foutmelding(id) {
+        const inputElement = document.getElementById(id);
+        const value = inputElement.value;
 
-            function foutmelding(id) {
-                //    document.getElementById("naam")
+        // Wachtwoordvalidatie
+        if (id === 'wachtwoord') {
+            const wachtwoordError = document.getElementById('wachtwoord-error');
+            const wachtwoordPattern = /^[a-zA-Z0-9!?]{8,12}$/;
 
-                if (document.getElementById(id).value.length < 2) {
-                    document.getElementById(id).style.backgroundColor = "red";
-                    document.getElementById(id + '-error').innerHTML = id + " klopt niet,";
-                }
-                else {
-                    document.getElementById(id).style.backgroundColor = "lightgreen";
-                    document.getElementById(id + '-error').innerHTML = "";
-                }
+            if (value.length < 8 || value.length > 12 || !wachtwoordPattern.test(value)) {
+                inputElement.style.backgroundColor = "red"; 
+                wachtwoordError.innerHTML = "8-12 tekens lang mag geen spaties of speciale tekens bevatten, behalve ! en ?";
+            } else {
+                inputElement.style.backgroundColor = "lightgreen";
+                wachtwoordError.innerHTML = "";
             }
 
-
-        </script>
+        } else {
+            if (value.length < 2) {
+                inputElement.style.backgroundColor = "red";
+                document.getElementById(id + '-error').innerHTML = id + " klopt niet,";
+            } else {
+                inputElement.style.backgroundColor = "lightgreen";
+                document.getElementById(id + '-error').innerHTML = "";
+            }
+        }
+        
+    }
+</script>
 
         </form>
 
@@ -206,8 +240,6 @@
         margin-bottom: 20px;
     }
 
-    
-
     table {
         width: 100%;
         max-width: 600px;
@@ -223,7 +255,8 @@
 
     input[type="text"],
     input[type="number"],
-    input[type="submit"] {
+    input[type="submit"],
+    input[type="password"] {
         width: calc(100% - 20px);
         padding: 8px;
         margin-top: 5px;
@@ -256,7 +289,10 @@
     #achternaam-error,
     #adres-error,
     #postcode-error,
+    #woonplaats-error,
+    #land-error,
     #telefoon-error,
+    #wachtwoord-error,
     #geslacht-error,
     #geboorte-error {
         color: red;
@@ -275,7 +311,8 @@
 
         input[type="text"],
         input[type="number"],
-        input[type="submit"] {
+        input[type="submit"],
+        input[type="password"] {
             width: 100%;
         }
     }

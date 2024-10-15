@@ -26,31 +26,36 @@
 
         <!-- Inlogpagina -->
         <form id="form" method="post" action="/inloggen">
-            <table>
-                <tr>
-                    <td><input type="text" name="gebruikersnaam" placeholder="gebruikersnaam" id="gebruikersnaam"
-                            onkeyup="foutmelding('gebruikersnaam')">
-                        <input type="text" name="wachtwoord" placeholder="wachtwoord" id="wachtwoord" onkeyup="foutmelding('wachtwoord')">
-                    </td>
-                </tr>
-                <tr>
-                    <td><a href="/inloggen" class="inloggen">inloggen</a></td>
+    @csrf
+    <!--fout melding-->
+    @if($errors->any())
+    <div class="alert alert-danger">
+        <ul>
+            @foreach($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    </div>
+@endif
 
-                </tr>
-                <tr>
-
-                    <td><a href="/accountaanmaken" class="accountaanmaken">account aanmaken</a></td>
-
-
-                </tr>
-
-
-            </table>
-        </form>
-
-
-
-        <!-- Second Section -->
+    <table>
+        <tr>
+            <td>
+                <input type="text" name="telefoon" placeholder="telefoonnummer" id="telefoon" required>
+                <input type="password" name="wachtwoord" placeholder="wachtwoord" id="wachtwoord" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <input type="submit" name="submit" value="Inloggen">
+            </td>
+        </tr>
+        <tr>
+            <td><a href="/accountaanmaken" class="accountaanmaken">account aanmaken</a></td>
+        </tr>
+    </table>
+</form>
+            <!-- Second Section -->
         <section class="grid-section light">
             <div class="container">
                 <div class="grid-icon">
@@ -62,8 +67,6 @@
             </div>
         </section>
     </main>
-    <!-- External JS -->
-    <script src="script.js"></script>
 </body>
 @endsection
 </html>
@@ -177,7 +180,8 @@
 
     input[type="text"],
     input[type="number"],
-    input[type="submit"] {
+    input[type="submit"],
+    input[type="password"] {
         width: calc(100% - 20px);
         padding: 8px;
         margin-top: 5px;
