@@ -99,11 +99,11 @@
                         </tr>
                         <tr>
                             <td>Zaterdag</td>
-                            <td>Gesloten</td>
+                            <td>08:00-17:00</td>
                         </tr>
                         <tr>
                             <td>Zondag</td>
-                            <td>Gesloten</td>
+                            <td>08:00-17:00</td>
                         </tr>
                     </table>
                 </div>
