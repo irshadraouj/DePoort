@@ -1,4 +1,5 @@
 <?php
+use illuminate\Support\Facades\Route;
 use App\Http\Controllers\AccountController;
 use App\Http\Controllers\AuthController;
 use App\Models\Client;
