@@ -19,8 +19,13 @@
         <section class="grid-section">
             <div class="container">
                 <div class="grid-text">
-                    <h2>Over ons</h2>
-                    <p>...</p>
+                    <h1>Ons Team</h1>
+                    <p>Ons toegewijde team van ervaren huisartsen, 
+                    praktijkondersteuners en assistentes staat altijd klaar 
+                    om u de beste zorg te bieden. Wij volgen de nieuwste ontwikkelingen 
+                    binnen de medische wetenschap en werken nauw samen met apotheken, 
+                    fysiotherapeuten, specialisten en ziekenhuizen om ervoor 
+                    te zorgen dat u de zorg krijgt die u nodig heeft.</p>
                 </div>
                 <div class="grid-icon">
                 </div>
@@ -89,7 +94,7 @@
     /* Header */
     .header {
         background-color: #5ea3a3;
-        padding: 35px 0;
+        padding: 20px 0;
         text-align: left;
     }
 
@@ -139,4 +144,18 @@
         width: 200px;
         height: 100px;
     }
+    /* icons */
+.social-icons a {
+    text-decoration: none;
+    margin: 0 10px;
+    color: #5ea3a3; /* Zwart */
+}
+
+.social-icons a:hover {
+    color: #000; /* Blauw bij hover */
+}
+
+.social-icons i {
+    font-size: 24px; /* Grootte van het icoon */
+}
 </style>

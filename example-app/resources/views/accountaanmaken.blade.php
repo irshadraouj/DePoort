@@ -46,9 +46,11 @@
                 </tr>
                 <tr>
                     <td><input type="text" name="adres" placeholder="adres" id="adres" onkeyup="foutmelding('adres')"></td>
+                    <td><input type="text" name="adres" placeholder="adres" id="adres" onkeyup="foutmelding('adres')"></td>
                     <td id="adres-error"></td>
                 </tr>
                 <tr>
+                    <td><input type="text" name="postcode" placeholder="postcode" id="postcode" onkeyup="foutmelding('postcode')"></td>
                     <td><input type="text" name="postcode" placeholder="postcode" id="postcode" onkeyup="foutmelding('postcode')"></td>
                     <td id="postcode-error"></td>
                 </tr>
@@ -64,6 +66,7 @@
                     <td id="land-error"></td>
                 </tr>
                 <tr>
+                    <td><input type="number" name="telefoon" placeholder="telefoon" id="telefoon" onkeyup="foutmelding('telefoon')">
                     <td><input type="number" name="telefoon" placeholder="telefoon" id="telefoon" onkeyup="foutmelding('telefoon')">
                     </td>
                     <td id="telefoon-error"></td>
@@ -84,6 +87,7 @@
 
                 </tr>
                 <tr>
+                    <td><input type="date" name="geboorte" placeholder="dd-mm-jjjj" id="geboorte" onkeyup="foutmelding('geboorte')">
                     <td><input type="date" name="geboorte" placeholder="dd-mm-jjjj" id="geboorte" onkeyup="foutmelding('geboorte')">
                     </td>
                     <td id="geboorte-error"></td>
@@ -190,7 +194,7 @@
     /* Header */
     .header {
         background-color: #5ea3a3;
-        padding: 35px 0;
+        padding: 20px 0;
         text-align: left;
     }
 
@@ -317,4 +321,18 @@
         width: 200px;
         height: 100px;
     }
+        /* icons */
+.social-icons a {
+    text-decoration: none;
+    margin: 0 10px;
+    color: #5ea3a3; /* Zwart */
+}
+
+.social-icons a:hover {
+    color: #000; /* Blauw bij hover */
+}
+
+.social-icons i {
+    font-size: 24px; /* Grootte van het icoon */
+}
 </style>
