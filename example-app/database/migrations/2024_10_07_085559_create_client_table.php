@@ -14,17 +14,18 @@ class CreateClientTable extends Migration
     public function up()
     {
         Schema::create('client', function (Blueprint $table) {
+            $table->id(); // Voeg een primaire sleutel toe
             $table->string('naam');
-            $table->string('tsv');
+            $table->string('tsv')->nullable();
             $table->string('achternaam');
             $table->string('adres');
             $table->string('postcode');
             $table->string('woonplaats');
             $table->string('land');
             $table->string('telefoon');
+            $table->string('wachtwoord');
             $table->string('geslacht');
             $table->date('geboorte');
-            
         });
     }
 
