@@ -17,7 +17,6 @@
             <div class="container">
                 <div class="grid-text">
                     <h2>Inloggen</h2>
-                    <p>...</p>
                 </div>
                 <div class="grid-icon">
                 </div>
@@ -27,10 +26,11 @@
         <!-- Inlogpagina -->
         <form id="form" method="post" action="/inloggen">
     @csrf
-    <!--fout melding-->
+    <!-- kijkt of er fouten zijn, als er fouten zijn komt er een melding.-->
     @if($errors->any())
     <div class="alert alert-danger">
         <ul>
+        <!-- loopt door elke foutmelding die in $error zit, word gegenereerd door laravel validatie ding.-->
             @foreach($errors->all() as $error)
                 <li>{{ $error }}</li>
             @endforeach
@@ -61,8 +61,6 @@
                 <div class="grid-icon">
                 </div>
                 <div class="grid-text">
-                    <h2>...</h2>
-                    <p>...</p>
                 </div>
             </div>
         </section>

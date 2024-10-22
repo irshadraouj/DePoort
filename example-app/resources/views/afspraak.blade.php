@@ -18,7 +18,6 @@
             <div class="container">
                 <div class="grid-text">
                     <h2>Afspraak maken</h2>
-                    <p>...</p>
                 </div>
                 <div class="grid-icon">
                 </div>
@@ -114,8 +113,6 @@
                 <div class="grid-icon">
                 </div>
                 <div class="grid-text">
-                    <h2>...</h2>
-                    <p>...</p>
                 </div>
             </div>
         </section>
