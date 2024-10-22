@@ -14,7 +14,7 @@ class CreateClientTable extends Migration
     public function up()
     {
         Schema::create('client', function (Blueprint $table) {
-            $table->id(); // Voeg een primaire sleutel toe
+            $table->id();
             $table->string('naam');
             $table->string('tsv')->nullable();
             $table->string('achternaam');
