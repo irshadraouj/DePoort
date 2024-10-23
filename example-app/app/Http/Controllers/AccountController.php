@@ -32,11 +32,9 @@ class AccountController extends Controller
     public function login(Request $request)
 {
     //dd($request->all());
-
-    // Stel dat je het wachtwoord dat de gebruiker invoert opslaat in $inputPassword
     $inputPassword = $request->wachtwoord;
     
-    // Zoek de gebruiker op basis van het telefoonnummer
+    // Zoek de gebruiker op via het telefoonnummer
     $client = Client::where('telefoon', $request->telefoon)->first();
     
     if ($client) {
@@ -46,7 +44,7 @@ class AccountController extends Controller
             Auth::guard('client')->login($client);
             return redirect()->intended('/');
         } else {
-            // Wachtwoord komt niet overeen
+            // wnr wachtwoord niet overeen komt
             return back()->withErrors(['wachtwoord' => 'Het wachtwoord is onjuist.']);
         }
     } else {

@@ -3,6 +3,7 @@
 @extends("layouts.layout")
 @section("De Poort, welcome")
 @section("content")
+
 <head>
     <title>De Poort</title>
     <meta charset="UTF-8">
@@ -28,9 +29,10 @@
             <table>
                 <tr>
                     <td> naam: </td>
-                    <td><input type="text" placeholder="naam" id="naam" onkeyup="foutmelding('naam')">
+                    <td><input type="text" placeholder="* naam" id="naam" onkeyup="foutmelding('naam')">
                         <input type="text" placeholder="tsv" id="tsv" onkeyup="foutmelding('tsv')">
-                        <input type="text" placeholder="achternaam" id="achternaam" onkeyup="foutmelding('achternaam')">
+                        <input type="text" placeholder="* achternaam" id="achternaam"
+                            onkeyup="foutmelding('achternaam')">
                     </td>
                     <td id="naam-error"></td>
                     <td id="tsv-error"></td>
@@ -38,7 +40,7 @@
                 </tr>
                 <tr>
                     <td> telefoon:</td>
-                    <td><input type="number" placeholder="telefoon" id="telefoon" onkeyup="foutmelding('telefoon')">
+                    <td><input type="number" placeholder="* telefoon" id="telefoon" onkeyup="foutmelding('telefoon')">
                     </td>
                     <td id="telefoon-error"></td>
 
@@ -58,8 +60,10 @@
                 </tr>
                 <tr>
                     <td> reden: </td>
-                    <td><input type="text" placeholder="reden van uw afspraak" id="reden"
-                            onkeyup="foutmelding('reden')">
+                    <td>
+                        <!-- <input type="text" placeholder="reden van uw afspraak" id="reden"
+                            onkeyup="foutmelding('reden')"> -->
+                        <textarea id="redenbox" placeholder="* reden van uw afspraak"></textarea>
 
                     </td>
                     <td id="reden-error"></td>
@@ -68,8 +72,7 @@
 
                 <tr>
                     <td> tijd: </td>
-                    <td><input type="text" placeholder="Tijd van afspraak" id="reden" onkeyup="foutmelding('tijd')">
-
+                    <td><input type="date" name="tijd" placeholder="dd-mm-jjjj" id="tijd" onkeyup="foutmelding('tijd')">
                     </td>
                     <td id="tijd-error"></td>
 
@@ -118,6 +121,7 @@
     <script src="script.js"></script>
 </body>
 @endsection
+
 </html>
 
 <style>
@@ -278,23 +282,33 @@
             width: 100%;
         }
     }
-    
-    .logo{
+
+    .logo {
         width: 200px;
         height: 100px;
     }
+
     /* icons */
-.social-icons a {
-    text-decoration: none;
-    margin: 0 10px;
-    color: #5ea3a3; /* Zwart */
-}
+    .social-icons a {
+        text-decoration: none;
+        margin: 0 10px;
+        color: #5ea3a3;
+        /* Zwart */
+    }
 
-.social-icons a:hover {
-    color: #000; /* Blauw bij hover */
-}
+    .social-icons a:hover {
+        color: #000;
+        /* Blauw bij hover */
+    }
 
-.social-icons i {
-    font-size: 24px; /* Grootte van het icoon */
-}
+    .social-icons i {
+        font-size: 24px;
+        /* Grootte van het icoon */
+    }
+
+    textarea {
+        resize: none;
+        width: 360px;
+        height: 70px;
+    }
 </style>

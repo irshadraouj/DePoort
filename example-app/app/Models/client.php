@@ -17,7 +17,6 @@ class Client extends Authenticatable
 
     public $timestamps = false; 
 
-    // Dit is belangrijk voor authenticatie
     protected $hidden = [
         'wachtwoord', // Verberg het wachtwoord
     ];
